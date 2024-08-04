@@ -5,7 +5,7 @@ from firebase_admin import credentials, firestore
 from datetime import datetime
 import uuid
 import streamlit as st
-from PIL import Image
+
 
 # Initializing Firebase
 if not firebase_admin._apps:
@@ -162,7 +162,7 @@ def show_visualizations():
     else:
         st.write("No sales data to visualize.")
 
-page = st.select_slider("Select Page", ["Data Entry","Red Bull","Visualizations"])
+page = st.select_slider("Select Page", ["Data Entry","Visualizations"])
 if page == "Data Entry":
     st.title("Sales Data Entry")
     st.header("Select From A Variety Of Products Below")
@@ -194,12 +194,6 @@ if page == "Data Entry":
                 enter_product(product, quantity, current_date)
         generate_bill(current_date)
         st.success("Data submitted and bill generated successfully.")
-
-elif page=="Red Bull":
-    st.title("     Red Bull gives you wings")
-    image = Image.open('C:\\Users\\divdm\\Downloads\\wings.jpg')
-    st.image(image, caption='Red Bull Gives You wings', use_column_width=True)
-   
 
 elif page == "Visualizations":
     show_visualizations()

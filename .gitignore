@@ -1,0 +1,24 @@
+# Python
+*.pyc
+__pycache__/
+
+# Streamlit
+.streamlit/
+
+# Credentials and sensitive files
+sales-tracker.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# VS Code
+.vscode/

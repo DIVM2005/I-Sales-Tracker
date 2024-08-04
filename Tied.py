@@ -6,7 +6,6 @@ from datetime import datetime
 import uuid
 import streamlit as st
 from PIL import Image
-print("HI")
 
 # Initializing Firebase
 if not firebase_admin._apps:

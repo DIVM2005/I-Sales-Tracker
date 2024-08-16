@@ -1,1 +1,1 @@
-# I-Sales-Tracker
+# Sales-Tracker
